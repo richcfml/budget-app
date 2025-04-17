@@ -12,6 +12,7 @@ class Category extends Model
     /** @use HasFactory<\Database\Factories\CategoryFactory> */
     use HasFactory;
 
+    public mixed $user_id;
     protected $fillable = ['name', 'type', 'user_id'];
 
     public function user(): BelongsTo
