@@ -12,7 +12,7 @@ class Account extends Model
     /** @use HasFactory<\Database\Factories\AccountFactory> */
     use HasFactory;
 
-    protected $fillable = ['name', 'description'];
+    protected $fillable = ['name', 'description', 'type', 'user_id'];
 
     public function users(): BelongsToMany
     {
